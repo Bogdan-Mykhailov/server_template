@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon src/app.ts",
     "format": "prettier --write . --ignore-path .gitignore",
-    "lint": "eslint . --ignore-path .gitignore",
+    "lint": "eslint . --ignore-path .gitignore --fix",
     "fix-style": "npm run format && npm run lint -- --fix",
     "prepare": "husky install"
   },
@@ -27,5 +27,6 @@
     "typescript": "^5.0.4"
   },
   "lint-staged": {
-    "*.ts": "npm run lint"  }
+    "*.ts": "npm run lint"
+  }
 }
