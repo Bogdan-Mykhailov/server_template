@@ -14,5 +14,5 @@ const createServer = () => {
 };
 
 createServer().listen(PORT, () => {
-  window.console.log(`Server is running on port ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
